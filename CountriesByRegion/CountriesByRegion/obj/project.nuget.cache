@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jwFxW6JnrfVsKbjnZVE3cUdQHL4p5WzMf3Y46NeetBewyXv+czlVcxcifYPz6QVqpBss/5bBblxWOIEcpT3i6g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Urano\\source\\testMELI\\CountriesByRegion\\CountriesByRegion\\CountriesByRegion.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Urano\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
