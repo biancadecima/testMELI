@@ -28,19 +28,23 @@ weights = [2, 5, 1, 1, 1]
     - *2. INTEGER_ARRAY prices*; 
     - *3. INTEGER_ARRAY weights*.
 
-Challenge #2: Countries by Region.
-Use the http get method to retrieve information from a wheather records database. Query https://jsonmock.hackerrank.com/api/countries/search?region={region}&name={keyword} to filter by region and name. The query result is paginated. 
-To access additional pages append &page={num} to the url where num is the page number. The query response from the API is a JSON with the following five fields:
-page: the current page, 
-per_page: the maximun number of results per page, 
-total: the total number of records in the search result, 
-total_pages: the total number of pages to query in order to get all the results, 
-data: an array of json objects containing weather records. 
-The data field in the response contains a list of weather recods with the following relevant schema: 
-name: the name of the country, region: the region this country belong to, 
-population: population of the country. 
-Given the region along with a keyword to search in the name field, return a list of string values where each element is the country along with its population, separeted by a comma, and sorted in increasing order of population as shown. If two countries have the same population, sort them further by name. 
-Function Description: 
-complete the function findCountries, that have the following parameters: 
-string keyword: keyword to search for in country name, 
-string region: region to search for.
+# Challenge 2: 
+<u>Countries by Region.</u> 
+
+Use the http `get` method to retrieve information from a wheather records database:
+- Query https://jsonmock.hackerrank.com/api/countries/search?region={region}&name={keyword} to filter by region and name. 
+- The query result is paginated. To access additional pages append &page={num} to the url where num is the page number. 
+- The query response from the API is a JSON with the following five fields: 
+    - **page**: the current page, 
+    - **per_page**: the maximun number of results per page, 
+    - **total**: the total number of records in the search result, 
+    - **total_pages**: the total number of pages to query in order to get all the results, 
+    - **data**: an array of json objects containing weather records. The data field in the response contains a list of weather recods with the following relevant schema: 
+        - **name**: the name of the country, 
+        - **region**: the region this country belong to, 
+        - **population**: population of the country. 
+
+- Given the region along with a keyword to search in the name field, return a list of string values where each element is the country along with its population, separeted by a comma, and sorted in increasing order of population as shown. If two countries have the same population, sort them further by name. 
+- *Function Description*: complete the function `findCountries`, that have the following parameters: 
+    - **string keyword**: keyword to search for in country name, 
+    - **string region**: region to search for.
